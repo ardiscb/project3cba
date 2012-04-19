@@ -2,11 +2,10 @@
 
 /*
 Add and/or label:
-JSON data
+Property: Object
 Argument: Array
 Argument: Number
 Arugment: String
-Argument: Object
 Argument: Boolean
 Conditional
 Nested Conditional
@@ -16,20 +15,35 @@ Nested loop
 Math
 Returns
 Back
-Property: Object
 */
+
+
+//Contains Argument: Object
+var handleData = function (family) {
+	for (var i = 0; i < family.characters.length; i++) {
+		var person = family.characters[i];
+		console.log(
+			"Name: " + 	person.name + 
+			", Occupation: " + person.occupation
+			);
+	};
+};
+
+handleData(family);
+
 
 //Clark Kent
 var clark = {
 	//Property: String
 	name: "Clark Kent",
 	//Property: Number
-	age: 18
+	age: 18,
 	//Method: Function
 	doSomething: function() {
 		//Return: ?
 		return something;
 	}
+
 };
 	
 
@@ -67,9 +81,13 @@ var ma = {
 
 var something = {
 	//Method: Accessor
-	getSomething: function() {}
+	getSomething: function() {
+	return something;
+	},
 	//Method: Mutator
-	setSomething: function() {}
+	setSomething: function() {
+	return something;
+	}
 };
 
 
