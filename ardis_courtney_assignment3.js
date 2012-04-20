@@ -7,9 +7,7 @@ Argument: Array
 Argument: Number
 Arugment: String
 Argument: Boolean
-Conditional
 Nested Conditional
-For loop
 While loop
 Nested loop
 Math
@@ -17,52 +15,41 @@ Returns
 Back
 */
 
+//Global Variables
+var clark = family.characters[0];
 
 //Contains Argument: Object
 var handleData = function (family) {
 	for (var i = 0; i < family.characters.length; i++) {
 		var person = family.characters[i];
 		console.log(
-			"Name: " + 	person.name + 
-			", Occupation: " + person.occupation
+			"My name is " + 	person.name + 
+			". I am " + person.occupation
 			);
 	};
 };
 
 handleData(family);
 
+//console.log(clark.name);
 
-//Clark Kent
-var clark = {
-	//Property: String
-	name: "Clark Kent",
-	//Property: Number
-	age: 18,
-	//Method: Function
-	doSomething: function() {
-		//Return: ?
-		return something;
-	}
+//
+var getAge = function() {
+		if (clark.age < 30) {
+		//Return: String
+			return (console.log("I, " + clark.name +  ", have not yet mastered all my skills."));
+		}
+		else {
+			return (console.log("I, " + clark.name + ", have mastered all my skills."));
+		};	
+	};
 
-};
+getAge();
+
+
 	
 
-//Pa Kent
-var pa = {
-	//Property: String
-	name: "Jonathan Kent",
-	//Property: Number
-	age: 42,
-	//Property: Boolean
-	bearded: true
-};
-
-//Ma Kent
-var ma = {
-	//Property: String
-	name: "Martha Kent",
-	//Property: Number
-	age: 40,
+var maHappy = {
 	//Method: Procedure
 	isHappy: function(happyClark) {
 		happyClark = true;
@@ -78,7 +65,7 @@ var ma = {
 		};
 	}
 };
-
+/*
 var something = {
 	//Method: Accessor
 	getSomething: function() {
@@ -89,8 +76,8 @@ var something = {
 	return something;
 	}
 };
+*/
 
-
-ma.isHappy();
+maHappy.isHappy();
 
 

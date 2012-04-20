@@ -2,15 +2,18 @@ var family = {
 	"characters": [
 		{
 			"name": "Clark Kent",
-			"occupation": "Superman"
+			"occupation": "Superman",
+			"age": "20"
 		},
 		{
 			"name": "Jonathan Kent",
-			"occupation": "Farmer"
+			"occupation": "a farmer",
+			"age": "46"
 		},
 		{
 			"name": "Martha Kent",
-			"occupation": "Mother"
+			"occupation": "a mother",
+			"age": "42"
 		}
 	]
 };
