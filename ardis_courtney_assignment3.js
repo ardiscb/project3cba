@@ -7,11 +7,9 @@ Argument: Array
 Argument: Number
 Arugment: String
 Argument: Boolean
-Nested Conditional
 While loop
 Nested loop
 Math
-Returns
 Back
 */
 
@@ -19,7 +17,8 @@ Back
 var clark = family.characters[0];
 
 //Contains Argument: Object
-var handleData = function (family) {
+//For loop
+var introduction = function (family) {
 	for (var i = 0; i < family.characters.length; i++) {
 		var person = family.characters[i];
 		console.log(
@@ -29,48 +28,49 @@ var handleData = function (family) {
 	};
 };
 
-handleData(family);
+introduction(family);
 
-//console.log(clark.name);
-
-//
-var getAge = function() {
+var skillAge = {
+	//Method: Accessor
+	getAge: function() {
 		if (clark.age < 30) {
-		//Return: String
-			return (console.log("I, " + clark.name +  ", have not yet mastered all my skills."));
+			//Return: String
+			return (console.log("I, " + clark.name +  ", have not yet mastered all my skills. I am only " + clark.age + " years old."));
 		}
 		else {
-			return (console.log("I, " + clark.name + ", have mastered all my skills."));
+			return (console.log("I, " + clark.name + ", have mastered all my skills. I am " + clark.age + " years old."));
 		};	
-	};
+	}
+};
 
-getAge();
+skillAge.getAge();
 
 
-	
-
-var maHappy = {
+var familyHappy = {
 	//Method: Procedure
-	isHappy: function(happyClark) {
-		happyClark = true;
-		if (happyClark === true) {
-		happyMartha = true;
-		//Output
-		console.log("Martha is happy!");
-		}
+	isHappy: function(happyClark, happyJon) {
+		console.log("Is the family happy?");
+		//Property: Boolean
+		happyClark: true;
+		happyJon: true;
+		if (happyClark = true) {
+			//Nested conditional
+			if (happyJon = true) {
+			happyFamily = true;
+			//Return: Boolean
+			return (console.log("It's " + happyFamily + ", Clark and Jonathan are both happy so Martha is also happy!"));
+			}
 		else {
-		happyMartha = false;
-		//Output
-		console.log("Martha is not happy!");
+			console.log("No one is happy.");
+		};
 		};
 	}
 };
+
+familyHappy.isHappy();
+
 /*
 var something = {
-	//Method: Accessor
-	getSomething: function() {
-	return something;
-	},
 	//Method: Mutator
 	setSomething: function() {
 	return something;
@@ -78,6 +78,5 @@ var something = {
 };
 */
 
-maHappy.isHappy();
 
 
