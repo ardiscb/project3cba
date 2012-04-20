@@ -33,8 +33,9 @@ introduction(family);
 var skillAge = {
 	//Method: Accessor
 	getAge: function() {
+		//Math
 		if (clark.age < 30) {
-			//Return: String
+			//Return String
 			return (console.log("I, " + clark.name +  ", have not yet mastered all my skills. I am only " + clark.age + " years old."));
 		}
 		else {
@@ -56,12 +57,13 @@ var familyHappy = {
 		if (happyClark = true) {
 			//Nested conditional
 			if (happyJon = true) {
-			happyFamily = true;
-			//Return: Boolean
-			return (console.log("It's " + happyFamily + ", Clark and Jonathan are both happy so Martha is also happy!"));
+			happyFamily = true			
+			return (console.log("Clark and Jonathan are both happy so Martha is also happy!"));		
 			}
 		else {
 			console.log("No one is happy.");
+			//Return Boolean
+			return false;
 		};
 		};
 	}
